@@ -14,7 +14,7 @@ const App = () => {
     quality: 1.0
   });
 
-  const download = (image, { name = "Qr Code", extension = "png" } = {}) => {
+  const download = (image, { name = "Qr Code", extension = "jpg" } = {}) => {
     const a = document.createElement("a");
     a.href = image;
     a.download = createFileName(extension, name);
