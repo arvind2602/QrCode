@@ -10,7 +10,7 @@ const App = () => {
   const [visitorCount, setVisitorCount] = useState(null);
   const [toast, setToast] = useState("");
   const ref = createRef(null);
-  const [image, takeScreenShot] = useScreenshot({
+  const [, takeScreenShot] = useScreenshot({
     type: "image/jpeg",
     quality: 1.0
   });
